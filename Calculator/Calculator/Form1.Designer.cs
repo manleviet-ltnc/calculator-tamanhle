@@ -189,7 +189,6 @@
             // btnDoiDau
             // 
             this.btnDoiDau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDoiDau.Enabled = false;
             this.btnDoiDau.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDoiDau.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDoiDau.Location = new System.Drawing.Point(12, 263);
@@ -202,7 +201,6 @@
             // btnCong
             // 
             this.btnCong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCong.Enabled = false;
             this.btnCong.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCong.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCong.Location = new System.Drawing.Point(181, 122);
@@ -211,11 +209,11 @@
             this.btnCong.TabIndex = 1;
             this.btnCong.Text = "+";
             this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.NhapPhepToan);
             // 
             // btnTrư
             // 
             this.btnTrư.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTrư.Enabled = false;
             this.btnTrư.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTrư.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTrư.Location = new System.Drawing.Point(181, 168);
@@ -224,11 +222,11 @@
             this.btnTrư.TabIndex = 1;
             this.btnTrư.Text = "-";
             this.btnTrư.UseVisualStyleBackColor = true;
+            this.btnTrư.Click += new System.EventHandler(this.NhapPhepToan);
             // 
             // btnNhan
             // 
             this.btnNhan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNhan.Enabled = false;
             this.btnNhan.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnNhan.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNhan.Location = new System.Drawing.Point(181, 214);
@@ -237,11 +235,11 @@
             this.btnNhan.TabIndex = 1;
             this.btnNhan.Text = "*";
             this.btnNhan.UseVisualStyleBackColor = true;
+            this.btnNhan.Click += new System.EventHandler(this.NhapPhepToan);
             // 
             // btnChia
             // 
             this.btnChia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnChia.Enabled = false;
             this.btnChia.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnChia.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnChia.Location = new System.Drawing.Point(181, 263);
@@ -250,11 +248,11 @@
             this.btnChia.TabIndex = 1;
             this.btnChia.Text = "/";
             this.btnChia.UseVisualStyleBackColor = true;
+            this.btnChia.Click += new System.EventHandler(this.NhapPhepToan);
             // 
             // btnPhanTram
             // 
             this.btnPhanTram.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPhanTram.Enabled = false;
             this.btnPhanTram.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnPhanTram.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPhanTram.Location = new System.Drawing.Point(228, 122);
@@ -267,7 +265,6 @@
             // btnCan
             // 
             this.btnCan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCan.Enabled = false;
             this.btnCan.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCan.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCan.Location = new System.Drawing.Point(228, 168);
@@ -280,7 +277,6 @@
             // btnNho
             // 
             this.btnNho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNho.Enabled = false;
             this.btnNho.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnNho.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNho.Location = new System.Drawing.Point(14, 72);
@@ -293,7 +289,6 @@
             // btnThapPhan
             // 
             this.btnThapPhan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThapPhan.Enabled = false;
             this.btnThapPhan.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThapPhan.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThapPhan.Location = new System.Drawing.Point(126, 263);
@@ -306,7 +301,6 @@
             // btnBang
             // 
             this.btnBang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBang.Enabled = false;
             this.btnBang.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnBang.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBang.Location = new System.Drawing.Point(228, 214);
@@ -315,11 +309,11 @@
             this.btnBang.TabIndex = 1;
             this.btnBang.Text = "=";
             this.btnBang.UseVisualStyleBackColor = true;
+            this.btnBang.Click += new System.EventHandler(this.btnbang_click);
             // 
             // btnXoa
             // 
             this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnXoa.Enabled = false;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoa.Location = new System.Drawing.Point(116, 72);
@@ -365,6 +359,7 @@
             this.Name = "frmCalculator";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Calculator";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmcalculator_KeyPress);
             this.ResumeLayout(false);
 
         }
