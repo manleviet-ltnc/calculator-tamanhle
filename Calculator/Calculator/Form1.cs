@@ -17,26 +17,27 @@ namespace Calculator
             InitializeComponent();
         }
         bool IsTyingNumber = false;
-        enum PhepToan { Cong, Tru, Nhan, Chia};
+        enum PhepToan { Cong, Tru, Nhan, Chia };
         PhepToan pheptoan;
 
+
         double nho;
-            
+
         private void NhapSo(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             NhapSo(btn.Text);
         }
-        private void NhapSo(string so )
+        private void NhapSo(string so)
         {
             if (IsTyingNumber)
                 lblDisplay.Text = lblDisplay.Text + so;
-             
+
             else
-               {
+            {
                 lblDisplay.Text = so;
                 IsTyingNumber = true;
-               }
+            }
         }
         private void NhapPhepToan(object sender, EventArgs e)
         {
@@ -57,7 +58,7 @@ namespace Calculator
         {
             double tam = double.Parse(lblDisplay.Text);
             double ketqua = 0.0;
-            switch(pheptoan)
+            switch (pheptoan)
             {
                 case PhepToan.Cong: ketqua = nho + tam; break;
                 case PhepToan.Tru: ketqua = nho - tam; break;
@@ -65,7 +66,7 @@ namespace Calculator
                 case PhepToan.Chia: ketqua = nho / tam; break;
             }
             lblDisplay.Text = ketqua.ToString();
-                 
+
         }
         private void btnbang_click(object sender, EventArgs e)
         {
@@ -91,5 +92,25 @@ namespace Calculator
 
             }
         }
-    }
-}
+        private void btnCan_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = (Math.Sqrt(Double.Parse(lblDisplay.Text))).ToString();
+        }
+
+        private void btnDoiGiau_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = (-1 * (double.Parse(lblDisplay.Text))).ToString();
+        }
+
+        private void btnPhanTram_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = ((double.Parse(lblDisplay.Text) / 100)).ToString();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (lblDisplay.Text.Length > 0)
+                lblDisplay.Text = lblDisplay.Text.Remove(lblDisplay.Text.Length - 1, 1);
+        }
+      }  
+} 
