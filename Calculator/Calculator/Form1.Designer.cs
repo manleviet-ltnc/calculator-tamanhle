@@ -288,6 +288,7 @@
             this.btnNho.TabIndex = 1;
             this.btnNho.Text = "C";
             this.btnNho.UseVisualStyleBackColor = true;
+            this.btnNho.Click += new System.EventHandler(this.btnNho_Click);
             // 
             // btnThapPhan
             // 
@@ -300,6 +301,7 @@
             this.btnThapPhan.TabIndex = 19;
             this.btnThapPhan.Text = ".";
             this.btnThapPhan.UseVisualStyleBackColor = true;
+            this.btnThapPhan.Click += new System.EventHandler(this.btnThapPhap_Click);
             // 
             // btnBang
             // 
@@ -325,7 +327,7 @@
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Backspace";
             this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_click);
             // 
             // frmCalculator
             // 
